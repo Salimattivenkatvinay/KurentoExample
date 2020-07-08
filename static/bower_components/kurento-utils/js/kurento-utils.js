@@ -241,11 +241,12 @@ function WebRtcPeer(mode, options, callback) {
     function setRemoteVideo() {
         if (remoteVideo) {
             var stream = pc.getRemoteStreams()[0];
-            var url = stream ? URL.createObjectURL(stream) : '';
+//            var url = stream ? URL.createObjectURL(stream) : '';
             remoteVideo.pause();
-            remoteVideo.src = url;
+//            remoteVideo.src = url;
+            remoteVideo.srcObject=stream;
             remoteVideo.load();
-            console.log('Remote URL:', url);
+//            console.log('Remote URL:', url);
         }
     }
     this.showLocalVideo = function () {

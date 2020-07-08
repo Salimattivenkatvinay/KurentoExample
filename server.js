@@ -11,7 +11,7 @@ app.set('port', process.env.PORT || 8080);
  */
 
 // Modify here the kurento media server address
-const ws_uri = "ws://localhost:8888/kurento";
+const ws_uri = "ws://13.232.6.92:8888/kurento";
 //const ws_uri = "ws://192.168.15.45:8888/kurento";
 
 /*
